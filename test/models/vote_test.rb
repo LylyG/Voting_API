@@ -1,7 +1,7 @@
 require 'test_helper'
 require 'minitest/pride'
 
-class CandidateTest < ActiveSupport::TestCase
+class VoteTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
