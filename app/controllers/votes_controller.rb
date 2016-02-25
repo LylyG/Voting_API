@@ -1,5 +1,8 @@
 class VotesController < ApplicationController
   def destroy
+    v = Vote.find(params[:id])
+    v.destroy
+    render json: "Your ballot was deleted."
   end
 
   def index
@@ -7,11 +10,7 @@ class VotesController < ApplicationController
   end
 
   def create
-    name = params["name"]
-    district = params["district"]
-    hometown = params["hometown"]
-    party = params["party"]
-    Candidate.create(name: name, district: district, hometown: hometown, party: party)
-    render json:
+    v = Vote.create(voter_id: params[:voter_id], candidate_id: params[:candidate_id])
+    render json: v
   end
 end
