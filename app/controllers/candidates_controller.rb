@@ -13,7 +13,7 @@ class CandidatesController < ApplicationController
     district = params["district"]
     hometown = params["hometown"]
     party = params["party"]
-    Candidate.create(name: name, district: district, hometown: hometown, party: party)
-    render json:
+    a = Candidate.create(name: name, district: district, hometown: hometown, party: party)
+    render json: a
   end
 end

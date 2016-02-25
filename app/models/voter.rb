@@ -2,5 +2,9 @@ class Voter < ActiveRecord::Base
   has_one :vote
   validates :name, presence: true
   validates :party, presence: true
-  validates :token, uniqueness: true
+  validates :token, presence: true, uniqueness: true
+
+  private def generate_token
+   self.token = SecureRandom.hex
+  end
 end
