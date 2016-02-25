@@ -1,5 +1,5 @@
 class VotersController < ApplicationController
-  def index
+  def update
   end
 
   def show

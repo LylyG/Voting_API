@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  get 'voters/index'
+  root 'voters#index'
+
+  get 'all'=> 'voters#index' #same thing as get 'voters/index' => 'voters#index'
+
+  get 'voters/update'
 
   get 'voters/show'
 

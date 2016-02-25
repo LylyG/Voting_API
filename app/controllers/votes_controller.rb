@@ -1,8 +1,8 @@
 class VotesController < ApplicationController
-  def index
+  def destroy
   end
 
-  def show
+  def index
   end
 
   def create
