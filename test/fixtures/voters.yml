@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  party: MyString
+Voter1:
+  name: Mason Matthews
+  party: Dictator
   token: MyString
 
-two:
-  name: MyString
-  party: MyString
+Voter2:
+  name: Jefferson Neel
+  party: Dark Side
   token: MyString

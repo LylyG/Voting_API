@@ -1,13 +1,25 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  hometown: MyString
-  district: MyString
-  party: MyString
+Trump:
+  name: Donald Trump
+  hometown: Queens NY
+  district: None
+  party: Republican
 
-two:
-  name: MyString
-  hometown: MyString
-  district: MyString
-  party: MyString
+Rubio:
+  name: Marco Rubio
+  hometown: Miami FL
+  district: FL
+  party: Republican
+
+Sanders:
+  name: Bernie Sanders
+  hometown: Brooklyn NY
+  district: VT
+  party: Democrat
+
+Clinton:
+  name: Hillary Clinton
+  hometown: Chicago IL
+  district: None
+  party: Democrat
